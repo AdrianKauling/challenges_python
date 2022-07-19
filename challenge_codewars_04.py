@@ -4,13 +4,13 @@ def tower_builder(n_floors):
     if n_floors == 0:
         return []
 
-    initial_num_of_the_asterisk = 1
+    initial_num_of_asterisk = 1
     pyramid = []
     asterisk_amount_in_base = n_floors * 2 - 1
 
     for n in range(n_floors):
-        pyramid.append('*'*initial_num_of_the_asterisk)
-        initial_num_of_the_asterisk += 2
+        pyramid.append('*'*initial_num_of_asterisk)
+        initial_num_of_asterisk += 2
 
         while len(pyramid[n]) != asterisk_amount_in_base:
             pyramid[n] = " "+pyramid[n]+" "
