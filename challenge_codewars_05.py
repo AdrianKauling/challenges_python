@@ -24,3 +24,10 @@ def sort_array(source_array):
 
 list1 = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 print(sort_array(list1))
+
+
+# Code of another person
+
+def sort_array_another_person(arr):
+    odds = sorted((x for x in arr if x % 2 != 0), reverse=True)
+    return [x if x % 2 == 0 else odds.pop() for x in arr]
